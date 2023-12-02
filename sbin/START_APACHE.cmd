@@ -1,7 +1,7 @@
 SetLocal
 
 IF "%APACHE.HOME%" == "" (
-  CALL setenv.cmd
+  CALL %~dp0setenv.cmd
 )
 
 TITLE Apache %APACHE.VERSION% sur le port %APACHE.PORT%
